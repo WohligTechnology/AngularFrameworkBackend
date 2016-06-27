@@ -1,7 +1,7 @@
 {
-  "name": "angularframeworkfrontend",
+  "name": "angularframeworkbackend",
   "version": "0.0.1",
-  "description": "AngularFrameworkFrontend",
+  "description": "AngularFrameworkBackend",
   "main": "gulpfile.js",
   "dependencies": {
     "crypto-js": "^3.1.6",
@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WohligTechnology/AngularFrameworkFrontend.git"
+    "url": "git+https://github.com/WohligTechnology/AngularFrameworkBackend.git"
   },
   "author": "chintan@wohlig.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WohligTechnology/AngularFrameworkFrontend/issues"
+    "url": "https://github.com/WohligTechnology/AngularFrameworkBackend/issues"
   },
-  "homepage": "https://github.com/WohligTechnology/AngularFrameworkFrontend#readme"
+  "homepage": "https://github.com/WohligTechnology/AngularFrameworkBackend#readme"
 }
