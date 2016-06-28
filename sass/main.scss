@@ -45,6 +45,9 @@ a, .btn {
   outline: 0;
   @include box-shadow(none);
 }
+.mt20{
+  margin-top: 20px;
+}
 //bootstrap forms
 /* Start writing sass here */
 @import "fancybox-override";
