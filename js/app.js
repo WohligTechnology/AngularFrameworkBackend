@@ -25,6 +25,18 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
         controller: 'LoginCtrl'
     })
 
+    .state('branch-list', {
+        url: "/branch-list",
+        templateUrl: "views/template.html",
+        controller: 'BranchListCtrl'
+    })
+
+    .state('branch-create', {
+        url: "/branch-create",
+        templateUrl: "views/template.html",
+        controller: 'BranchCreateCtrl'
+    })
+
     ;
     $urlRouterProvider.otherwise("/login");
     $locationProvider.html5Mode(isproduction);
