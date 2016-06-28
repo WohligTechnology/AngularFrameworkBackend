@@ -22,36 +22,3 @@
         </div>
     </div><!-- Menu Scroll -->
 </header>
-<script type="text/javascript">
-    $(document).ready(function(){
-      "use strict";
-      //***** Side Menu *****//
-
-
-    /*** FIXED Menu APPEARS ON SCROLL DOWN ***/
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 10) {
-        $(".side-header").addClass("sticky");
-        }
-        else{
-        $(".side-header").removeClass("sticky");
-        $(".side-header").addClass("");
-        }
-    });
-
-    $(".side-menus nav > ul > li ul li > a").on("click", function(){
-        $(".side-header").removeClass("slide-menu");
-        $(".menu-options").removeClass("active");
-    });
-
-      //***** Side Menu *****//
-      $(function(){
-          $('.side-menus').slimScroll({
-              height: '400px',
-              wheelStep: 10,
-              size: '2px'
-          });
-      });
-    });
-</script>
