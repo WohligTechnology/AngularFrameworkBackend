@@ -14,14 +14,51 @@ var navigationservice = angular.module('navigationservice', [])
     name: "Dashboard",
     classis: "active",
     anchor: "dashboard",
-    icon: "",
+    icon: "dashboard",
     subnav: [{
       name: "Dashboard",
       classis: "active",
       anchor: "dashboard",
-      icon: ""
+      icon: "dashboard"
     }]
-  }];
+  },
+  {
+    name: "Company Setup",
+    classis: "active",
+    anchor: "company",
+    icon: "users",
+    subnav: [{
+      name: "List",
+      classis: "active",
+      anchor: "list",
+      icon: "list"
+    },
+    {
+      name: "List",
+      classis: "active",
+      anchor: "list",
+      icon: "list"
+    },
+    {
+      name: "List",
+      classis: "active",
+      anchor: "list",
+      icon: "list"
+    }]
+  },
+  {
+    name: "Dashboard",
+    classis: "active",
+    anchor: "dashboard",
+    icon: "dashboard",
+    subnav: [{
+      name: "Dashboard",
+      classis: "active",
+      anchor: "dashboard",
+      icon: "dashboard"
+    }]
+  }
+];
 
   return {
     getnav: function() {
