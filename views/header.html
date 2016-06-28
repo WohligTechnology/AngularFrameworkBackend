@@ -1,19 +1,101 @@
-<header>
-   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" ui-sref="home"><img src="img/logo.png" alt="logo" width="20"> </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="nav-collapse">
-               <div ng-include="template.menu" class="template menu"></div>
+<div class="toggle-content">
+    <div class="panel-setting">
+        <div class="row">
+            <div class="col-md-2 column">
+                <div class="custom-text">
+                    <h4>Our Total Counts</h4>
+                    <p>Rinter took a galley of type and scrambled ajnare tokeraline..</p>
+                </div>
+            </div>
+            <div class="col-md-10 column">
+                <div class="quick-stats">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="quick-stats-box">
+                                <p class="data-attributes">
+                                    <i>$56</i>
+                                    <span data-peity='{ "fill": ["#faa5ff", "rgba(255,255,255,0.15)"],   "innerRadius": 47, "radius": 50 }'>5/7</span>
+                                </p>
+                                <span>Today Earnings</span>
+                            </div>
+                        </div>
+                       <div class="col-md-2">
+                            <div class="quick-stats-box">
+                                <p class="data-attributes">
+                                    <i>$786</i>
+                                    <span data-peity='{ "fill": ["#ffb8b8", "rgba(255,255,255,0.15)"],   "innerRadius": 47, "radius": 50 }'>3/7</span>
+                                </p>
+                                <span>Refferel</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="quick-stats-box">
+                                <p class="data-attributes">
+                                    <i>$345</i>
+                                    <span data-peity='{ "fill": ["#ace9ff", "rgba(255,255,255,0.15)"],   "innerRadius": 47, "radius": 50 }'>4/7</span>
+                                </p>
+                                <span>Commision</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="quick-stats-box">
+                                <p class="data-attributes">
+                                    <i>$223</i>
+                                    <span data-peity='{ "fill": ["#b8b8ff", "rgba(255,255,255,0.15)"],   "innerRadius": 47, "radius": 50 }'>6/7</span>
+                                </p>
+                                <span>New Sales</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="total-sales-info">
+                                <span>Total sales made of all time</span>
+                                <h3>$1,225</h3>
+                                <ul>
+                                    <li>
+                                        <span>Target</span>
+                                        <h5>$2,251</h5>
+                                    </li>
+                                    <li>
+                                        <span>Today</span>
+                                        <h5>$107</h5>
+                                    </li>
+                                    <li>
+                                        <span>All time</span>
+                                        <h5>$3,463</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+    <span class="fa fa-close"></span>
+</div><!-- Toggle Content -->
+<div class="top-bar">
+    <div class="logo">
+        <a href="#/" title=""><i class="fa fa-deviantart"></i> Electric</a>
+         <div class="menu-options"><span class="menu-action"><i></i></span></div>
+    </div>
+    <form class="search-form">
+        <input type="text" placeholder="Search Here..." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="quick-links">
+        <ul>
+            <li><a title="" class="show-stats red-skin"><i class="fa fa-power-off"></i></a></li>
+        </ul>
+    </div>
+</div><!-- Top Bar -->
+<header class="side-header light-skin opened-menu">
+    <div class="admin-details"></div>
+    <div class="menu-scroll">
+        <div class="side-menus">
+            <span>MAIN LINKS</span>
+            <nav ng-include="template.menu">
+                
+            </nav>
+        </div>
+    </div><!-- Menu Scroll -->
 </header>

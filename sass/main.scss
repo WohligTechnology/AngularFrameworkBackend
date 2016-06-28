@@ -4,15 +4,11 @@
 @import "../bower_components/flexslider/flexslider.css";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
-/* Bootstrap Variables Goes Here */
-$brand-primary: #0d9dff !default;
-$brand-success: #84ce3c !default;
-$brand-warning: #ffec39 !default;
-$brand-danger: #fc483f !default;
-$brand-info: #000072 !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "template/icons";
+@import "template/main";
+@import "template/responsive";
 body {
-  padding-top: 70px;
 }
 img.loading {
   text-align: center;
