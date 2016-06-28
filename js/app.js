@@ -76,6 +76,43 @@ firstapp.directive('fancyboxBox', function($document) {
     };
 });
 
+firstapp.directive('menuOptions', function($document) {
+    return {
+        restrict: 'C',
+        replace: false,
+        link: function(scope, element, attr) {
+            var $element = $(element);
+            $(element).on("click", function(){
+              $(".side-header.opened-menu").toggleClass('slide-menu');
+              $(".main-content").toggleClass('wide-content');
+              $("footer").toggleClass('wide-footer');
+              $(".menu-options").toggleClass('active');
+            });
+
+        }
+    };
+});
+
+var abc;
+firstapp.directive('oI', function($document) {
+    return {
+        restrict: 'C',
+        replace: false,
+        link: function(scope, element, attr) {
+            var $element = $(element);
+            abc = $element;
+            $element.click(function(){
+              $element.parent().siblings().children("ul").slideUp();
+              $element.parent().siblings().removeClass("active");
+              $element.parent().children("ul").slideToggle();
+              $element.parent().toggleClass("active");
+              return false;
+            });
+
+        }
+    };
+});
+
 
 firstapp.config(function($translateProvider) {
     $translateProvider.translations('en', LanguageEnglish);

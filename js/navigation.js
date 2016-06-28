@@ -34,29 +34,24 @@ var navigationservice = angular.module('navigationservice', [])
       icon: "list"
     },
     {
-      name: "List",
+      name: "Users",
       classis: "active",
-      anchor: "list",
-      icon: "list"
+      anchor: "user",
+      icon: "user"
     },
     {
-      name: "List",
+      name: "Branch",
       classis: "active",
-      anchor: "list",
-      icon: "list"
+      anchor: "branch",
+      icon: "link"
     }]
   },
   {
-    name: "Dashboard",
+    name: "General",
     classis: "active",
-    anchor: "dashboard",
-    icon: "dashboard",
-    subnav: [{
-      name: "Dashboard",
-      classis: "active",
-      anchor: "dashboard",
-      icon: "dashboard"
-    }]
+    anchor: "general",
+    icon: "sticky-note",
+    subnav: []
   }
 ];
 

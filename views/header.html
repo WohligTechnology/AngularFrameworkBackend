@@ -26,21 +26,7 @@
     $(document).ready(function(){
       "use strict";
       //***** Side Menu *****//
-      $(".side-menus li.menu-item-has-children > a").on("click",function(){
-          $(this).parent().siblings().children("ul").slideUp();
-          $(this).parent().siblings().removeClass("active");
-          $(this).parent().children("ul").slideToggle();
-          $(this).parent().toggleClass("active");
-          return false;
-      });
-
-      //***** Side Menu Option *****//
-      $('.menu-options').on("click", function(){
-        $(".side-header.opened-menu").toggleClass('slide-menu');
-        $(".main-content").toggleClass('wide-content');
-        $("footer").toggleClass('wide-footer');
-        $(".menu-options").toggleClass('active');
-      });
+      
 
     /*** FIXED Menu APPEARS ON SCROLL DOWN ***/
     $(window).scroll(function() {
