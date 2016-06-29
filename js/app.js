@@ -105,14 +105,13 @@ firstapp.directive('menuOptions', function($document) {
     };
 });
 
-var abc;
+
 firstapp.directive('oI', function($document) {
     return {
         restrict: 'C',
         replace: false,
         link: function(scope, element, attr) {
             var $element = $(element);
-            abc = $element;
             $element.click(function(){
               $element.parent().siblings().children("ul").slideUp();
               $element.parent().siblings().removeClass("active");
